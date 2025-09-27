@@ -158,6 +158,38 @@ Our experimental results demonstrate that the proposed framework outperforms exi
   </div>
 </div>
 </section>
+	<section id="overview" class="hero is-light">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <h2 class="title is-3">Overview of the PPT framework</h2>
+          <div class="content has-text-justified">
+            <p style="font-size: 125%;">
+              Observations and a phase variable are fed to the policy, which outputs residual ProMP weights.
+              These are combined with via-point conditioned reference weights to form a ProMP trajectory.
+              An energy-tank layer scales the command to ensure safe execution, which a Cartesian impedance
+              controller tracks and converts to joint torques. Interaction feedback informs via-point
+              reparameterization. PPO updates the policy using GAE and a value critic (dashed arrow).
+            </p>
+            <br>
+            <div class="has-text-centered">
+              <object data="assets/images/pipeline.pdf#view=FitH"
+                      type="application/pdf"
+                      width="100%" height="600">
+                <p>
+                  Your browser can't display the PDF.
+                  <a href="assets/images/pipeline.pdf" target="_blank">Open the figure</a>.
+                </p>
+              </object>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 <section id="video_section" class="hero">
 <div class="hero-body">
